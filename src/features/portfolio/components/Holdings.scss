@@ -1,0 +1,58 @@
+.holdings {
+    font-family: 'Open Sans', sans-serif;
+  
+    .holdings-title {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .error {
+      color: red;
+    }
+  
+    .holding-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #eee;
+      font-size: 0.95rem;
+  
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  
+    .stock-name {
+      font-weight: 600;
+  
+      .risk {
+        display: inline-block;
+        font-size: 0.75rem;
+        margin-left: 0.5rem;
+        padding: 0.1rem 0.4rem;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+        text-transform: uppercase;
+      }
+    }
+  
+    .stock-change {
+      flex: 1;
+      text-align: center;
+      font-weight: 500;
+    }
+  
+    .stock-price {
+      font-weight: 600;
+    }
+  
+    .green {
+      color: #2c9a2c;
+    }
+  
+    .red {
+      color: #e53935;
+    }
+  }
+  

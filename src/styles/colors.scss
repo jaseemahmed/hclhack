@@ -1,0 +1,9 @@
+// Primary brand color
+$primary: #072447;
+
+// Generate a secondary shade from primary (a lighter version)
+$secondary: lighten($primary, 20%);
+
+// Ternary and utility colors
+$ternary: #ffffff;
+$black: #000000;
