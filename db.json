@@ -47,6 +47,20 @@
       { "id": 3, "idUserLoginDetail": 3, "userAction": "LOGIN_ATTEMPT", "startDateTime": "2025-06-01T08:30:00Z", "endDateTime": "2025-06-01T08:31:00Z" },
       { "id": 4, "idUserLoginDetail": 4, "userAction": "DOWNLOAD_REPORT", "startDateTime": "2025-06-01T12:00:00Z", "endDateTime": "2025-06-01T12:05:00Z" },
       { "id": 5, "idUserLoginDetail": 5, "userAction": "UPDATE_ORDER", "startDateTime": "2025-06-01T13:00:00Z", "endDateTime": "2025-06-01T13:03:00Z" }
+    ],
+    "PORTFOLIO_DETAILS": [
+      { "id": 1, "idUserLoginDetail": 1, "portfolioName": "Retirement Plan", "riskLevel": "Low", "totalInvestment": 10000, "totalReturn": 12000, "accountBalance": 9000 },
+      { "id": 2, "idUserLoginDetail": 2, "portfolioName": "Growth Strategy", "riskLevel": "Medium", "totalInvestment": 15000, "totalReturn": 18000, "accountBalance": 13000 },
+      { "id": 3, "idUserLoginDetail": 3, "portfolioName": "Balanced Portfolio", "riskLevel": "Medium", "totalInvestment": 12000, "totalReturn": 14000, "accountBalance": 10000 },
+      { "id": 4, "idUserLoginDetail": 4, "portfolioName": "Aggressive Equity", "riskLevel": "High", "totalInvestment": 20000, "totalReturn": 21000, "accountBalance": 18000 },
+      { "id": 5, "idUserLoginDetail": 5, "portfolioName": "Dividend Income", "riskLevel": "Low", "totalInvestment": 8000, "totalReturn": 8500, "accountBalance": 7000 }
+    ],
+    "ASSET_DETAILS": [
+      { "id": 1, "idPortfolioDetail": 1, "assetName": "ABC Fund", "allocationPercent": 40, "currentValue": 4800 },
+      { "id": 2, "idPortfolioDetail": 1, "assetName": "XYZ Bond", "allocationPercent": 60, "currentValue": 7200 },
+      { "id": 3, "idPortfolioDetail": 2, "assetName": "Tech ETF", "allocationPercent": 50, "currentValue": 9000 },
+      { "id": 4, "idPortfolioDetail": 3, "assetName": "Gold Trust", "allocationPercent": 70, "currentValue": 9800 },
+      { "id": 5, "idPortfolioDetail": 4, "assetName": "Emerging Markets", "allocationPercent": 100, "currentValue": 18000 }
     ]
   }
   

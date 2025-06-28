@@ -1,9 +1,11 @@
-import { configureStore } from "@reduxjs/toolkit";
-import transactionReducer from '../features/transactions/transactionSlice'
+// src/app/store.js
+import { configureStore } from '@reduxjs/toolkit';
+import transactionReducer from '../features/transactions/transactionSlice';
+import portfolioReducer from '../features/portfolio/portfolioSlice';
 
 export const store = configureStore({
   reducer: {
-    room : transactionReducer   
+    room: transactionReducer,
+    portfolio: portfolioReducer,
   },
-})
-
+});
