@@ -1,0 +1,52 @@
+{
+    "USER_DETAIL": [
+      { "id": 1, "firstName": "Alice", "lastName": "Smith", "emailAddress": "alice@example.com", "createdOn": "2025-01-01T08:00:00Z", "createdBy": "admin", "modifiedOn": "2025-01-10T10:00:00Z", "modifiedBy": "admin" },
+      { "id": 2, "firstName": "Bob", "lastName": "Johnson", "emailAddress": "bob@example.com", "createdOn": "2025-01-02T09:00:00Z", "createdBy": "admin", "modifiedOn": "2025-01-10T10:00:00Z", "modifiedBy": "admin" },
+      { "id": 3, "firstName": "Charlie", "lastName": "Brown", "emailAddress": "charlie@example.com", "createdOn": "2025-01-03T09:30:00Z", "createdBy": "admin", "modifiedOn": "2025-01-10T10:00:00Z", "modifiedBy": "admin" },
+      { "id": 4, "firstName": "Diana", "lastName": "Morris", "emailAddress": "diana@example.com", "createdOn": "2025-01-04T10:00:00Z", "createdBy": "admin", "modifiedOn": "2025-01-10T10:00:00Z", "modifiedBy": "admin" },
+      { "id": 5, "firstName": "Evan", "lastName": "Lee", "emailAddress": "evan@example.com", "createdOn": "2025-01-05T11:00:00Z", "createdBy": "admin", "modifiedOn": "2025-01-10T10:00:00Z", "modifiedBy": "admin" }
+    ],
+    "USER_LOGIN_DETAIL": [
+      { "id": 1, "idUserDetail": 1, "firstName": "Alice", "lastName": "Smith", "emailAddress": "alice@example.com", "userStatus": "ACTIVE", "createdOn": "2025-01-01T08:00:00Z", "createdBy": "admin", "modifiedOn": "2025-01-10T10:00:00Z", "modifiedBy": "admin" },
+      { "id": 2, "idUserDetail": 2, "firstName": "Bob", "lastName": "Johnson", "emailAddress": "bob@example.com", "userStatus": "ACTIVE", "createdOn": "2025-01-02T09:00:00Z", "createdBy": "admin", "modifiedOn": "2025-01-10T10:00:00Z", "modifiedBy": "admin" },
+      { "id": 3, "idUserDetail": 3, "firstName": "Charlie", "lastName": "Brown", "emailAddress": "charlie@example.com", "userStatus": "LOCKED", "createdOn": "2025-01-03T09:30:00Z", "createdBy": "admin", "modifiedOn": "2025-01-10T10:00:00Z", "modifiedBy": "admin" },
+      { "id": 4, "idUserDetail": 4, "firstName": "Diana", "lastName": "Morris", "emailAddress": "diana@example.com", "userStatus": "ACTIVE", "createdOn": "2025-01-04T10:00:00Z", "createdBy": "admin", "modifiedOn": "2025-01-10T10:00:00Z", "modifiedBy": "admin" },
+      { "id": 5, "idUserDetail": 5, "firstName": "Evan", "lastName": "Lee", "emailAddress": "evan@example.com", "userStatus": "INACTIVE", "createdOn": "2025-01-05T11:00:00Z", "createdBy": "admin", "modifiedOn": "2025-01-10T10:00:00Z", "modifiedBy": "admin" }
+    ],
+    "SECURITY_DETAIL": [
+      { "id": 1, "securityName": "ABC Fund", "value": 100 },
+      { "id": 2, "securityName": "XYZ Bond", "value": 200 },
+      { "id": 3, "securityName": "Tech ETF", "value": 150 },
+      { "id": 4, "securityName": "Gold Trust", "value": 180 },
+      { "id": 5, "securityName": "Emerging Markets", "value": 220 }
+    ],
+    "ORDER_DETAIL": [
+      { "id": 1, "idSecurityDetail": 1, "orderRefNo": "ORD001", "orderStatus": "Executed", "transactionType": "Buy", "orderValue": "1000", "createdOn": "2025-06-01T09:00:00Z", "createdBy": 1 },
+      { "id": 2, "idSecurityDetail": 2, "orderRefNo": "ORD002", "orderStatus": "Completed", "transactionType": "Sell", "orderValue": "500", "createdOn": "2025-06-01T10:00:00Z", "createdBy": 2 },
+      { "id": 3, "idSecurityDetail": 3, "orderRefNo": "ORD003", "orderStatus": "Cancelled", "transactionType": "Buy", "orderValue": "2000", "createdOn": "2025-06-01T11:00:00Z", "createdBy": 3 },
+      { "id": 4, "idSecurityDetail": 4, "orderRefNo": "ORD004", "orderStatus": "Failed", "transactionType": "Sell", "orderValue": "700", "createdOn": "2025-06-01T12:00:00Z", "createdBy": 4 },
+      { "id": 5, "idSecurityDetail": 5, "orderRefNo": "ORD005", "orderStatus": "Submitted", "transactionType": "Buy", "orderValue": "1500", "createdOn": "2025-06-01T13:00:00Z", "createdBy": 5 }
+    ],
+    "ACCOUNT_DETAIL": [
+      { "id": 1, "idUserLoginDetail": 1, "credit": 5000, "debit": 1000, "runningBalance": 9000, "idOrderDetail": 1, "createdOn": "2025-06-01T09:10:00Z", "createdBy": 1 },
+      { "id": 2, "idUserLoginDetail": 2, "credit": 3000, "debit": 500, "runningBalance": 2500, "idOrderDetail": 2, "createdOn": "2025-06-01T10:10:00Z", "createdBy": 2 },
+      { "id": 3, "idUserLoginDetail": 3, "credit": 10000, "debit": 2000, "runningBalance": 8000, "idOrderDetail": 3, "createdOn": "2025-06-01T11:10:00Z", "createdBy": 3 },
+      { "id": 4, "idUserLoginDetail": 4, "credit": 4000, "debit": 700, "runningBalance": 3300, "idOrderDetail": 4, "createdOn": "2025-06-01T12:10:00Z", "createdBy": 4 },
+      { "id": 5, "idUserLoginDetail": 5, "credit": 6000, "debit": 1500, "runningBalance": 4500, "idOrderDetail": 5, "createdOn": "2025-06-01T13:10:00Z", "createdBy": 5 }
+    ],
+    "AUDIT_USER_LOGIN": [
+      { "id": 1, "idUserLoginDetail": 1, "sessionId": "S001", "loginStatus": "SUCCESS", "loginDateTime": "2025-06-01T08:00:00Z", "logoutDateTime": "2025-06-01T16:00:00Z" },
+      { "id": 2, "idUserLoginDetail": 2, "sessionId": "S002", "loginStatus": "SUCCESS", "loginDateTime": "2025-06-01T08:15:00Z", "logoutDateTime": "2025-06-01T17:00:00Z" },
+      { "id": 3, "idUserLoginDetail": 3, "sessionId": "S003", "loginStatus": "FAILED", "loginDateTime": "2025-06-01T08:30:00Z", "logoutDateTime": null },
+      { "id": 4, "idUserLoginDetail": 4, "sessionId": "S004", "loginStatus": "SUCCESS", "loginDateTime": "2025-06-01T09:00:00Z", "logoutDateTime": "2025-06-01T15:30:00Z" },
+      { "id": 5, "idUserLoginDetail": 5, "sessionId": "S005", "loginStatus": "SUCCESS", "loginDateTime": "2025-06-01T09:15:00Z", "logoutDateTime": "2025-06-01T17:15:00Z" }
+    ],
+    "AUDIT_ACTION": [
+      { "id": 1, "idUserLoginDetail": 1, "userAction": "VIEW_PORTFOLIO", "startDateTime": "2025-06-01T09:00:00Z", "endDateTime": "2025-06-01T09:02:00Z" },
+      { "id": 2, "idUserLoginDetail": 2, "userAction": "PLACE_ORDER", "startDateTime": "2025-06-01T10:00:00Z", "endDateTime": "2025-06-01T10:03:00Z" },
+      { "id": 3, "idUserLoginDetail": 3, "userAction": "LOGIN_ATTEMPT", "startDateTime": "2025-06-01T08:30:00Z", "endDateTime": "2025-06-01T08:31:00Z" },
+      { "id": 4, "idUserLoginDetail": 4, "userAction": "DOWNLOAD_REPORT", "startDateTime": "2025-06-01T12:00:00Z", "endDateTime": "2025-06-01T12:05:00Z" },
+      { "id": 5, "idUserLoginDetail": 5, "userAction": "UPDATE_ORDER", "startDateTime": "2025-06-01T13:00:00Z", "endDateTime": "2025-06-01T13:03:00Z" }
+    ]
+  }
+  
