@@ -1,9 +1,6 @@
-// Primary brand color
+@use 'sass:color'; // ✅ Correct way to access built-in color functions
+
 $primary: #072447;
-
-// Generate a secondary shade from primary (a lighter version)
-$secondary: lighten($primary, 20%);
-
-// Ternary and utility colors
+$secondary: color.adjust($primary, $lightness: 20%);
 $ternary: #ffffff;
 $black: #000000;

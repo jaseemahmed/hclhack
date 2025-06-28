@@ -1,3 +1,5 @@
+@use '../styles/colors' as *;
+
 .header {
     height: 60px;
     background-color: #072447;
@@ -5,7 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 1rem 2rem;
+
+    .home-link{
+        color: $ternary;
+        text-decoration: none;
+    }
   }
   
   .title {

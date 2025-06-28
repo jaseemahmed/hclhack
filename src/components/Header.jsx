@@ -5,7 +5,10 @@ import './Header.scss';
 export default function Header() {
   return (
     <header className="header">
-      <h1 className="title">My Portfolio</h1>
+       {/* Clickable Title to go to home */}
+       <h1 className="title">
+        <Link to="/" className="home-link">My Portfolio</Link>
+      </h1>
       <nav className="menu">
         <Link to="/orders" className="menu-item">Orders</Link>
         <Link to="/history" className="menu-item">History</Link>

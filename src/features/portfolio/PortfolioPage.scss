@@ -1,7 +1,9 @@
-@import '../../styles/colors';
+@use '../../styles/colors.scss' as *;
+
+
 
 .header {
-  background-color: $primary;
+  background-color: red;
   color: $ternary;
 }
 
