@@ -1,6 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import transactionReducer from "../features/transactions/transactionSlice.js";
 import userReducer from "../features/user/userSlice.js";
+import portfolioReducer from "../features/portfolio/portfolioSlice";
 
 export const store = configureStore({
   reducer: {
@@ -11,4 +12,5 @@ export const store = configureStore({
     getDefaultMiddleWare({
       serializableCheck: false,
     }),
+  portfolio: portfolioReducer,
 });
